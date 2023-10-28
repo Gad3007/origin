@@ -11,9 +11,9 @@
 
 int Promt(string message)            // плохо понятный мне кусок кода взял из примера решения
 {
-    System.Console.Write(message);
-    string readInput = System.Console.ReadLine();
-    int result = int.Parse(readInput);
+    Console.Write(message);
+    string readInput = Console.ReadLine();
+    int result = int.Parse(readInput); //int.Parse аналог Convert.ToInt32
     return result;
 }
 
@@ -28,7 +28,7 @@ int SumAllNumbers(int number)
     return result; //возвращаем результат сложения чисел
 }
 int number = Promt("Введи число: ");
-System.Console.WriteLine($"Сумма всех чисел в цифре {number} = {SumAllNumbers(number)}"); 
+Console.WriteLine($"Сумма всех чисел в цифре {number} = {SumAllNumbers(number)}"); 
 
 //---------------------------------------------------------------------------------------------------
 // int GenNum(int num)
